@@ -21,7 +21,7 @@ Si ricorda che la password di default della macchina virtuale Linux data a lezio
 
 Una volta installato `git` potete clonare il repository:
 ```bash
-$ git clone git@github.com:Dexterux/LabProgrammazione2019.git
+$ git clone https://github.com/Dexterux/LabProgrammazione2019.git 
 ```
 Questo comando creerà una cartella `Laboratorio2019` che contiene gli esercizi fatti fino a quel momento.
 Per aggiornare la cartella scaricando gli ultimi esercizi pubblicati:
