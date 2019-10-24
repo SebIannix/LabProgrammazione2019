@@ -11,18 +11,16 @@ func main() {
 
 	if numero%3 == 0 && numero%5 == 0 {
 		// Se il numero è sia multiplo di 3 che di 5
-		fmt.Print("Fizz Buzz")
+		fmt.Println("Fizz Buzz")
 	} else if numero%3 == 0 {
 		// Se il numero è multiplo solo di 3 (si arriva qua SOLO SE l'espressione dell'if in riga 12 era falsa)
-		fmt.Print("Fizz")
+		fmt.Println("Fizz")
 	} else if numero%5 == 0 {
 		// Se il numero è multiplo solo di 5 (si arriva qua SOLO SE le espressioni degli if in riga 12 e 15 erano false)
-		fmt.Print("Buzz")
+		fmt.Println("Buzz")
 	} else {
-		// in questo caso il numero non è multiplo di 3 e non è multiplo di 5
-		// questo ramo else è superfluo e può essere rimosso
+		// si arriva in questo ramo solo se il numero non è multiplo di 3 e non è multiplo di 5
+		// questo ramo else è superfluo e può essere rimosso in quanto il programma non deve stampare nulla
 	}
-
-	fmt.Println()
 
 }
