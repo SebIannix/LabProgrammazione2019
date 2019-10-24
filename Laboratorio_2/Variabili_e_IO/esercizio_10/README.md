@@ -6,3 +6,17 @@ Scrivere un programma che legga da **standard input** due numeri interi che chia
 ```go
 area := (n * math.Pow(l, 2)) / (4 * math.Tan(math.Pi/n))
 ```
+
+##### Esempio d'esecuzione:
+
+```markdown
+$ go run areapoligono.go 
+Inserisci il numero di lati del poligono: 6
+Inserisci la lunghezza dei lati del poligono: 3
+Area calcolata: 23.382685902179844
+
+$ go run areapoligono.go
+Inserisci il numero di lati del poligono: 4
+Inserisci la lunghezza dei lati del poligono: 3
+Area calcolata: 9
+```
