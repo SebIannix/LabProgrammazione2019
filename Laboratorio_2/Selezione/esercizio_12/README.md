@@ -47,4 +47,17 @@ Scegli la conversione:
 : 1
 Inserisci il valore da convertire: 3618
 3618 secondi corrispondono a 1.005 ore
+
+$ go run conversioni.go
+Scegli la conversione:
+1) secondi -> ore
+2) secondi -> minuti
+3) minuti -> ore
+4) minuti -> secondi
+5) ore -> secondi
+6) ore -> minuti
+7) minuti -> giorni e ore
+8) minuti -> anni e giorni
+: 9
+Scelta errata
 ```
