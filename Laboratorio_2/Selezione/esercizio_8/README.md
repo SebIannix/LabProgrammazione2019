@@ -8,6 +8,7 @@ Scrivere un programma che legge da **standard input** un numero intero e stampa 
 $ go run fizzbuzz.go
 Inserisci un numero: 5
 Buzz
+
 $ go run fizzbuzz.go
 Inserisci un numero: 4
 
