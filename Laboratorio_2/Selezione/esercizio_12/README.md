@@ -19,7 +19,7 @@ Scrivere un unico programma che:
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run conversioni.go 
 Scegli la conversione:
 1) secondi -> ore

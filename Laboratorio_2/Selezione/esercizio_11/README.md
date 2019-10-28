@@ -6,7 +6,7 @@ Scrivere un programma che legga da **standard input** le ampiezze di due angoli 
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go angolitriangolo.go
 Inserire le ampiezze dei due angoli: 50 60
 Ampiezza terzo angolo = 70°

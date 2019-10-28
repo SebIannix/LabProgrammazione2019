@@ -4,7 +4,7 @@ Scrivere un programma che legga da **standard input** una distanza in Km ed effe
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run convertitore.go
 Distanza (Km) = 12
 Distanza (mi) = 7.45644

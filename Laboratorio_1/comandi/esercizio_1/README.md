@@ -1,7 +1,7 @@
 # Creazione cartelle
 
 Crea tramite il comando `mkdir` una struttura di cartelle simile a
-```markdown
+```text
 /home/<nome_utente>
 └── laboratorio_programmazione
     ├── Lab_1

@@ -6,7 +6,7 @@ Scrivere un programma che legga da **standard input** il raggio di un cerchio e 
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run cerchio.go
 Raggio = 2.5
 Circonferenza = 15.707963267948966

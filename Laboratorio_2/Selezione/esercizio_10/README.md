@@ -5,7 +5,7 @@ Se `b` è uguale a 0, il programma stampa `Impossibile`.
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run divisione.go
 Inserisci due numeri:
 5 2

@@ -4,7 +4,7 @@ Scrivere un programma che legga da **standard input** le misure dell’altezza e
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run rettangolo.go
 Inserisci la base: 20
 Inserisci l'altezza: 10

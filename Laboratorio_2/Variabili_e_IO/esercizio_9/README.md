@@ -20,7 +20,7 @@ mediaArrotondataEccesso := math.Ceil(media)
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run calcoloeta.go 
 Età persona 1 = 15
 Età persona 2 = 20

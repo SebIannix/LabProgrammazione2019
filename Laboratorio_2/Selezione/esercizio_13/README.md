@@ -8,7 +8,7 @@ Il programma deve determinare se il punto `P` sta sopra o sotto la retta od appa
 
 *Suggerimento:* un punto appartiene ad una retta se sostituendo le sue coordinate nell'equazione della retta l'uguaglianza è verificata. Un punto sta sopra una retta se sostituendo il valore dell'ascissa nell'equazione della retta si ottiene `y < py`.
 
-```markdown
+```text
 $ go run retta.go
 Inserisci m e q: 1 0
 Inserisci x e y: 5 5

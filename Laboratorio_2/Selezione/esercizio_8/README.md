@@ -4,7 +4,7 @@ Scrivere un programma che legge da **standard input** un numero intero e stampa 
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run fizzbuzz.go
 Inserisci un numero: 5
 Buzz

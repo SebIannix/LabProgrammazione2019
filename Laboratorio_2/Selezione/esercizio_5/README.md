@@ -4,7 +4,7 @@ Scrivere un programma che legge da **standard input** un numero intero `n` (spec
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run interoconsegno.go
 Inserisci numero: 5
 +5

@@ -9,7 +9,7 @@ area := (n * math.Pow(l, 2)) / (4 * math.Tan(math.Pi/n))
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run areapoligono.go 
 Inserisci il numero di lati del poligono: 6
 Inserisci la lunghezza dei lati del poligono: 3

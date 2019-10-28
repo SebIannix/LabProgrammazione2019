@@ -130,7 +130,7 @@ Scrivere un programma che legga da **standard input** le misure dell’altezza e
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run rettangolo.go
 Inserisci la base: 20
 Inserisci l'altezza: 10
@@ -146,7 +146,7 @@ Scrivere un programma che legga da **standard input** il raggio di un cerchio e 
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run cerchio.go
 Raggio = 2.5
 Circonferenza = 15.707963267948966
@@ -159,7 +159,7 @@ Scrivere un programma che legga da **standard input** una distanza in Km ed effe
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run convertitore.go
 Distanza (Km) = 12
 Distanza (mi) = 7.45644
@@ -187,7 +187,7 @@ mediaArrotondataEccesso := math.Ceil(media)
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run calcoloeta.go 
 Età persona 1 = 15
 Età persona 2 = 20
@@ -210,7 +210,7 @@ area := (n * math.Pow(l, 2)) / (4 * math.Tan(math.Pi/n))
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run areapoligono.go 
 Inserisci il numero di lati del poligono: 6
 Inserisci la lunghezza dei lati del poligono: 3

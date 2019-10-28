@@ -171,7 +171,7 @@ Scrivere un programma che legge da **standard input** un numero intero `n` (spec
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run interoconsegno.go
 Inserisci numero: 5
 +5
@@ -192,7 +192,7 @@ Scrivere un programma che legge da **standard input** un numero intero `n` e ver
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run multiplo10.go
 Inserisci numero: 15
 15 non è multiplo di 10
@@ -214,7 +214,7 @@ Scrivere un programma che legga da **standard input** un voto `v` da 0 a 100 e s
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run voto.go
 Inserisci il voto: 75
 Buono
@@ -234,7 +234,7 @@ Scrivere un programma che legge da **standard input** un numero intero e stampa 
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run fizzbuzz.go
 Inserisci un numero: 5
 Buzz
@@ -254,7 +254,7 @@ Fizz
 Scrivere un programma che legge da **standard input** un intero `n` e stampa a video se il numero è pari o dispari.
 
 ##### Esempio d'esecuzione:
-```markdown
+```text
 $ go run paridispari.go
 Inserisci un numero: 10
 10 è pari
@@ -271,7 +271,7 @@ Se `b` è uguale a 0, il programma stampa `Impossibile`.
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run divisione.go
 Inserisci due numeri:
 5 2
@@ -291,7 +291,7 @@ Scrivere un programma che legga da **standard input** le ampiezze di due angoli 
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go angolitriangolo.go
 Inserire le ampiezze dei due angoli: 50 60
 Ampiezza terzo angolo = 70°
@@ -322,7 +322,7 @@ Scrivere un unico programma che:
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run conversioni.go 
 Scegli la conversione:
 1) secondi -> ore
@@ -375,7 +375,7 @@ Il programma deve determinare se il punto `P` sta sopra o sotto la retta od appa
 
 *Suggerimento:* un punto appartiene ad una retta se sostituendo le sue coordinate nell'equazione della retta l'uguaglianza è verificata. Un punto sta sopra una retta se sostituendo il valore dell'ascissa nell'equazione della retta si ottiene `y < py`.
 
-```markdown
+```text
 $ go run retta.go
 Inserisci m e q: 1 0
 Inserisci x e y: 5 5

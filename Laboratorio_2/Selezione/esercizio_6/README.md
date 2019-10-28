@@ -6,7 +6,7 @@ Scrivere un programma che legge da **standard input** un numero intero `n` e ver
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run multiplo10.go
 Inserisci numero: 15
 15 non è multiplo di 10

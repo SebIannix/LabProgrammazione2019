@@ -10,7 +10,7 @@ Scrivere un programma che legga da **standard input** un voto `v` da 0 a 100 e s
 
 ##### Esempio d'esecuzione:
 
-```markdown
+```text
 $ go run voto.go
 Inserisci il voto: 75
 Buono
