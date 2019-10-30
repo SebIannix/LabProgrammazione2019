@@ -1,6 +1,6 @@
 # Laboratorio di Programmazione A.A. 2019/2020
 
-In questo repository si trovano le soluzioni agli esercizi dati al corso di Laboratorio di Programmazione.
+In questo repository si trovano possibili soluzioni agli esercizi dati al corso di Laboratorio di Programmazione.
 
 Per scaricare gli esercizi potete fare il download di un archivio ZIP, oppure clonare il repository usando `git`.
 
