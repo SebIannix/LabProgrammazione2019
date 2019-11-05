@@ -14,7 +14,10 @@ L'output stampato a video dal programma deve essere quello riportato nell'**Esem
  
 *Suggerimento:* per generare in modo casuale un numero intero, potete utilizzare le funzioni del package `math/rand` come mostrato nel seguente frammento di codice:
 ```go
-/* inizializzazione del generatore di numeri casuali */
+/* 
+inizializzazione del generatore di numeri casuali 
+richiede anche l'importazione del package "time"!
+*/
 rand.Seed(int64(time.Now().Nanosecond())) 
 /* generazione di un numero casuale compreso nell'intervallo 
    che va da 0 a 99 (estremi inclusi) */
