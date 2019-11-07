@@ -9,15 +9,15 @@ import "fmt"
 
 func main() {
 
-	var numero int
+	var dimensione int
 
 	fmt.Print("Inserisci un numero: ")
-	fmt.Scan(&numero)
+	fmt.Scan(&dimensione)
 
 	// Il primo for serve per scorrere le righe del quadrato
-	for i := 0; i < numero; i++ {
+	for riga := 0; riga < dimensione; riga++ {
 		// Il secondo for per le colonne del quadrato
-		for j := 0; j < numero; j++ {
+		for colonna := 0; colonna < dimensione; colonna++ {
 			fmt.Print("* ")
 		}
 

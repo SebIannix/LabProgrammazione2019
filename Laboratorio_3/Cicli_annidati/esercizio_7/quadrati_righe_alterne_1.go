@@ -11,17 +11,17 @@ import (
 
 func main() {
 
-	var numero int
+	var dimensione int
 	fmt.Print("Inserisci un numero: ")
-	fmt.Scan(&numero)
+	fmt.Scan(&dimensione)
 
-	for i := 0; i < numero; i++ {
-		for j := 0; j < numero; j++ {
+	for riga := 0; riga < dimensione; riga++ {
+		for colonna := 0; colonna < dimensione; colonna++ {
 
-			// Possiamo distinguere i due casi * e + semplicemente controllando se l'indice di riga
-			// è multiplo di 2. In questo modo possiamo alternare delle sequenze prestabilite
+			// Possiamo distinguere i due casi '*' e '+' semplicemente controllando se l'indice di riga
+			// è multiplo di 2.
 			// In questo caso, con righe di indice pari stamperemo *, mentre con righe di indice dispari dei +
-			if i%2 == 0 {
+			if riga%2 == 0 {
 				fmt.Print("* ")
 			} else {
 				fmt.Print("+ ")
