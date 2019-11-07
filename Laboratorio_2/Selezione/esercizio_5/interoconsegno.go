@@ -4,15 +4,18 @@ import "fmt"
 
 func main() {
 
-	var numero int
+	var numeroInput int
 
 	fmt.Print("Inserisci numero: ")
-	fmt.Scan(&numero)
+	fmt.Scan(&numeroInput)
 
-	if numero > 0 {
-		fmt.Print("+", numero, "\n")
+	// se il numero è positivo deve essere aggiunto il segno +
+	if numeroInput > 0 {
+		fmt.Print("+", numeroInput, "\n")
 	} else {
-		fmt.Println(numero)
+		// nel caso di un numero negativo, il segno non deve essere aggiunto in quanto viene già stampato
+		// nel caso l'input sia invece 0, non serve il segno
+		fmt.Println(numeroInput)
 	}
 
 }
