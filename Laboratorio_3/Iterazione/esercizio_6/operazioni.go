@@ -25,6 +25,8 @@ func main() {
 	// min, max = math.MaxInt64, math.MinInt64
 	// ovvero con il valore intero massimo e il valore intero minimo rappresentabili
 
+	// Altre varianti del programma potrebbero inizializzare min e max al primo valore letto
+
 	for i := 0; i < n; i++ {
 		// Ad ogni iterazione leggo un numero e aggiorno i valori
 
