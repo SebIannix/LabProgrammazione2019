@@ -1,6 +1,6 @@
 # Trasformazione lettere maiuscole/minuscole
 
-Scrivere un programma che legga da **standard input** una stringa e, considerando l’insieme delle lettere dell'alfabeto inglese, ristampi a video la stringa due volte: la prima volta in maiuscolo e la seconda volta in minuscolo.
+Scrivere un programma che legga da **standard input** una stringa e, considerando **solamente** l’insieme delle lettere dell'alfabeto inglese, ristampi a video la stringa due volte: la prima volta in maiuscolo e la seconda volta in minuscolo.
 
  *Suggerimento:* Sia `c` una varibile di tipo `rune`, i seguenti blocchi di codici sono sintatticamente/semanticamente corretti:
  ```go
