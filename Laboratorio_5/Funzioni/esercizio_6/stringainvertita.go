@@ -31,7 +31,11 @@ func LeggiTesto() (testo string) {
 }
 
 func InvertiStringa(stringa string) (stringaOutput string) {
+	// stringaOutput è inizializzata come stringa vuota
 	for _, c := range stringa {
+		// ad ogni iterazione aggiungo un carattere
+		// all'inizio di stringaOutput
+		// invertendo così la stringa di input
 		stringaOutput = string(c) + stringaOutput
 	}
 	return

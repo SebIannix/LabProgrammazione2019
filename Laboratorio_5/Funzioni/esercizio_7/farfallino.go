@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"strings"
+//	"strings" // per versione alternativa
 )
 
 func main() {
@@ -28,12 +28,23 @@ func LeggiTesto() (testo string) {
 
 func TraduciCarattereInFarfallino(carattere rune) (carattereTrasformato string) {
 	carattereTrasformato = string(carattere)
+	
+	if carattere=='a' || carattere=='e' || carattere=='i' || carattere=='o' || carattere=='u' {
+		carattereTrasformato += "f" + carattereTrasformato
+	}
+	if carattere=='A' || carattere=='E' || carattere=='I' || carattere=='O' || carattere=='U' {
+		carattereTrasformato += "F" + carattereTrasformato
+	}
+	/*
+	VERSIONE ALTERNATIVA: controllo se il carattere è presente
+	in una stringa contenente solo vocali
 	if strings.ContainsRune("aeiou", carattere) {
 		carattereTrasformato += "f" + carattereTrasformato
 	}
 	if strings.ContainsRune("AEIOU", carattere) {
 		carattereTrasformato += "F" + carattereTrasformato
 	}
+	*/
 	return
 }
 
