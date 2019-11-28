@@ -16,37 +16,46 @@ func main() {
 
 }
 
+// Converto i valori passati da riga di comando in una slice di interi.
+// ATTENZIONE: in questa versione non viene fatto un controllo dell'input
 func LeggiNumeri() (numeri []int) {
+    // la slice numeri viene creata di dimensione uguale alla slice
+    // os.Args ma scartando il primo valore, che è il nome dell'eseguibile
     numeri = make([]int, len(os.Args)-1)
 	for i, v := range os.Args[1:] {
-	    n, _ := strconv.Atoi(v)
-		numeri[i] = n
+	    numeri[i], _ = strconv.Atoi(v)
 	}
 	return
 }
 
-func Minimo(numeri []int) int {
-	min := math.MaxInt64
+// Calcola il valore minimo in una slicedi interi.
+func Minimo(numeri []int) (min int) {
+	min = math.MaxInt64
 	for _, n := range numeri {
 		if min > n {
 			min = n
 		}
 	}
-	return min
+	return
 }
 
-func Massimo(numeri []int) int {
-	max := math.MinInt64
+// Calcola il valore massimo in una slice di interi.
+func Massimo(numeri []int) (max int) {
+	max = math.MinInt64
 	for _, n := range numeri {
 		if max < n {
 			max = n
 		}
 	}
-	return max
+	return
 }
 
+// Calcola la media artimetica di una slice di interi.
 func Media(numeri []int) (media float64) {
 	for _, n := range numeri {
+        // la variabile media viene usata inizialmente come
+        // accumulatore per memorizzare la somma
+        // dei valori interi della slice
 		media += float64(n)
 	}
 	media /= float64(len(numeri))
