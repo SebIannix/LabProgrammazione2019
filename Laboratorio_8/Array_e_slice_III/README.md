@@ -28,26 +28,23 @@ func main() {
 	fmt.Println("ii)", a, len(a), cap(a))
 	a = a[:Dimensione]
 
-	//fmt.Printf("&a[0] = %p\n",&a[0])
 	a = append(a[Dimensione/2:], a[:Dimensione/2]...)
-	//fmt.Printf("&a[0] = %p\n",&a[0])
-	fmt.Println("iii)\n a: ", a, len(a), cap(a))
+
+	fmt.Println("iii)", a, len(a), cap(a))
 	a = a[:cap(a)]
-	fmt.Println("iv)\n a: ", a, len(a), cap(a))
+	fmt.Println("iv)", a, len(a), cap(a))
 	a = a[:Dimensione]
 
 	for i := 0; i < Dimensione; i++ {
 		a[i] = i + 1
 	}
 
-	//fmt.Printf("&a[0] = %p\n",&a[0])
 	a = append(a[:Dimensione/5], a[(4*Dimensione)/5:]...)
-	//fmt.Printf("&a[0] = %p\n",&a[0])
 
 	fmt.Println(strings.Repeat("=", 10))
-	fmt.Println("v)\n a:", a, len(a), cap(a))
+	fmt.Println("v)", a, len(a), cap(a))
 	a = a[:cap(a)]
-	fmt.Println("vi)\n a: ", a, len(a), cap(a))
+	fmt.Println("vi)", a, len(a), cap(a))
 
 }
 ```
@@ -334,8 +331,6 @@ func main() {
 
 	/* (2) */
 	strFrom2 := "ABDEF"
-	s := []rune(strFrom2)
-	s[2] = 'C'
 	//strTo2 := strFrom2[:2]+string('C')+strFrom2[3:]
 	strTo2 := strFrom2[:2]+"C"+strFrom2[3:]
 	fmt.Println(strTo2)
@@ -355,24 +350,24 @@ Oltre alla funzione `main()`, devono essere definite ed utilizzate almeno le seg
 ##### Esempio d'esecuzione:
 
 ```text
-$ go run tavola_pitagorica.go 5 
-1 2 3 4 5 
-2 4 6 8 10 
-3 6 9 12 15 
-4 8 12 16 20 
-5 10 15 20 25 
+$ go run tavola_pitagorica.go 5
+   1    2    3    4    5 
+   2    4    6    8   10 
+   3    6    9   12   15 
+   4    8   12   16   20 
+   5   10   15   20   25 
 
 $ go run tavola_pitagorica.go 10
-1 2 3 4 5 6 7 8 9 10 
-2 4 6 8 10 12 14 16 18 20 
-3 6 9 12 15 18 21 24 27 30 
-4 8 12 16 20 24 28 32 36 40 
-5 10 15 20 25 30 35 40 45 50 
-6 12 18 24 30 36 42 48 54 60 
-7 14 21 28 35 42 49 56 63 70 
-8 16 24 32 40 48 56 64 72 80 
-9 18 27 36 45 54 63 72 81 90 
-10 20 30 40 50 60 70 80 90 100 
+   1    2    3    4    5    6    7    8    9   10 
+   2    4    6    8   10   12   14   16   18   20 
+   3    6    9   12   15   18   21   24   27   30 
+   4    8   12   16   20   24   28   32   36   40 
+   5   10   15   20   25   30   35   40   45   50 
+   6   12   18   24   30   36   42   48   54   60 
+   7   14   21   28   35   42   49   56   63   70 
+   8   16   24   32   40   48   56   64   72   80 
+   9   18   27   36   45   54   63   72   81   90 
+  10   20   30   40   50   60   70   80   90  100
 ```
 ## 8 Date (1)
 
