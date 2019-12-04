@@ -80,10 +80,10 @@ Oltre alla funzione `main()`, devono essere definite ed utilizzate almeno le seg
 ##### Esempio d'esecuzione:
 
 ```text
-$ go run istogrammaV1.go
+$ go run istogramma.go
 TESTO di prova
 disposto su più righe!
-Istogramma:
+Occorrenze:
 i: ****
 a: *
 h: *
