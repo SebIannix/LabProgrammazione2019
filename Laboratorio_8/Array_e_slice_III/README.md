@@ -429,8 +429,8 @@ $ go run coppie.go 4
 Scrivere un programma che:
 1. Legga da **riga di comando** un numero intero `n` tale che `0 < n < 10`.
 2. Inizializzi una stringa che rappresenti un mazzo di carte formato dalle sole carte di cuori.
-i) Le carte di cuori corrispondono ai caratteri con codice Unicode compreso nell'intervallo che va da `'\U0001F0B1'` a `'\U0001F0BA'`, estremi inclusi. 
-ii) Le carte del mazzo non sono mischiate: la prima carta del mazzo è l'asse di cuori; la seconda carta del mazzo è il due di cuori;... l'ultima carta del mazzo è il dieci di cuori.
+    1. Le carte di cuori corrispondono ai caratteri con codice Unicode compreso nell'intervallo che va da `'\U0001F0B1'` a `'\U0001F0BA'`, estremi inclusi. 
+    2. Le carte del mazzo non sono mischiate: la prima carta del mazzo è l'asse di cuori; la seconda carta del mazzo è il due di cuori;... l'ultima carta del mazzo è il dieci di cuori.
 3. Simuli l'estrazione casuale (ed in sequenza) di `n` carte dal mazzo, stampando a video le carte estratte e quelle rimaste nel mazzo dopo ogni estrazione. 
 
 Oltre alla funzione `main()`, devono essere definite ed utilizzate almeno le seguenti funzioni:
