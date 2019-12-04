@@ -15,26 +15,26 @@ Oltre alla funzione `main()`, devono essere definite ed utilizzate almeno le seg
 ##### Esempio d'esecuzione:
 
 ```text
-$ go run istogrammaV1.go
+$ go run istogramma.go
 TESTO di prova
 disposto su più righe!
-Istogramma:
-i: ****
-a: *
-h: *
-d: **
-r: **
-g: *
-e: *
+Occorrenze:
+O: *
 p: ***
+ù: *
+h: *
+e: *
+T: **
+S: *
+a: *
 s: ***
+E: *
+v: *
 t: *
 u: *
+g: *
+d: **
+i: ****
+r: **
 o: ***
-E: *
-S: *
-O: *
-v: *
-ù: *
-T: **
 ```
