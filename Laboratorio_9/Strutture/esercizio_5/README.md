@@ -7,11 +7,11 @@ Si consideri una rubrica in cui:
 
 La rubrica può essere gestita tramite le seguenti operazioni: 
 
-1. I;*cognome*;*nome*;*via*;*numero_civico*;*CAP*;*città*;*numero_di_telefono*
+1. I;*nome*;*cognome*;*via*;*numero_civico*;*CAP*;*città*;*numero_di_telefono*
 
    Un nuovo contatto specificato dai parametri: 
 
-   *cognome* *nome* *via* *numero_civico* *CAP* *città* *numero_di_telefono*
+   *nome* *cognome* *via* *numero_civico* *CAP* *città* *numero_di_telefono*
 
    deve essere **inserito** nella rubrica.
 
@@ -19,11 +19,11 @@ La rubrica può essere gestita tramite le seguenti operazioni:
  
    *via* *numero_civico* *CAP* *città* *numero_di_telefono*
 
-2. E;*cognome*;*nome*
+2. E;*nome*;*cognome*
 
    Il contatto identificato dai parametri: 
 
-   *cognome* *nome*
+   *nome* *cognome*
 
    deve essere **eliminato** dalla rubrica.
 
@@ -33,7 +33,7 @@ La rubrica può essere gestita tramite le seguenti operazioni:
 
    I contatti presenti nella rubrica devono essere **stampati** a video.
 
-4. A;*cognome*;*nome*;*via*;*numero_civico*;*CAP*;*città*;*numero_di_telefono*
+4. A;*nome*;*cognome*;*via*;*numero_civico*;*CAP*;*città*;*numero_di_telefono*
 
    I dati relativi al contatto identificato dai parametri: 
 
@@ -45,7 +45,7 @@ La rubrica può essere gestita tramite le seguenti operazioni:
 
    Se i parametri *cognome* e *nome* non identificano un contatto già esistente all'interno della rubrica, un nuovo contatto specificato dai parametri: 
  
-   *cognome* *nome* *via* *numero_civico* *CAP* *città* *numero_di_telefono*
+   *nome* *cognome* *via* *numero_civico* *CAP* *città* *numero_di_telefono*
 
    deve essere **inserito** nella rubrica. 
 
@@ -55,20 +55,20 @@ Scrivere un programma che:
 
 Ogni riga di testo è una stringa in uno dei seguenti possibili formati:
 
-1. I;*cognome*;*nome*;*via*;*numero_civico*;*CAP*;*città*;*numero_di_telefono*
-2. E;*cognome*;*nome*
+1. I;*nome*;*cognome*;*via*;*numero_civico*;*CAP*;*città*;*numero_di_telefono*
+2. E;*nome*;*cognome*
 3. S
-4. A;*cognome*;*nome*;*via*;*numero_civico*;*CAP*;*città*;*numero_di_telefono*
+4. A;*nome*;*cognome*;*via*;*numero_civico*;*CAP*;*città*;*numero_di_telefono*
 
 Il programma deve gestire una rubrica eseguendo in sequenza le operazioni corrispondenti alle righe di testo letto.
 
 Oltre alla funzione `main()`, devono essere definite ed utilizzate almeno le seguenti funzioni:
 
 * una funzione `NuovaRubrica() (r map[string]Contatto)` che restituisce un valore `map[string]Contatto` nella variabile `r` che rappresenta una rubrica vuota (un'istanza del tipo `Contatto` può essere indicizzata in `r` utilizzando il valore chiave `cognome + "-" + nome`); 
-* una funzione `InserisciContatto(r map[string]Contatto, cognome, nome string, via string, numero uint, cap, città string, telefono string) map[string]Contatto` che, in base alle modalità previste al punto `1`, inserisce nella rubrica `r` un'istanza del tipo `Contatto` inizializzata in base ai valori dei parametri `cognome`, `nome`, `via`, `numero`, `CAP`, `città`, `telefono`;
-* una funzione `EliminaContatto(r map[string]Contatto, cognome, nome string) map[string]Contatto` che, in base alle modalità previste al punto `2`, elimina dalla rubrica `r` l'istanza del tipo `Contatto` i cui campi `Cognome` e `Nome` hanno lo stesso valore di quello dei parametri `cognome` e `nome`;
+* una funzione `InserisciContatto(r map[string]Contatto, nome, cognome string, via string, numero uint, cap, città string, telefono string) map[string]Contatto` che, in base alle modalità previste al punto `1`, inserisce nella rubrica `r` un'istanza del tipo `Contatto` inizializzata in base ai valori dei parametri `cognome`, `nome`, `via`, `numero`, `CAP`, `città`, `telefono`;
+* una funzione `EliminaContatto(r map[string]Contatto, nome, cognome string) map[string]Contatto` che, in base alle modalità previste al punto `2`, elimina dalla rubrica `r` l'istanza del tipo `Contatto` i cui campi `Cognome` e `Nome` hanno lo stesso valore di quello dei parametri `cognome` e `nome`;
 * una funzione `StampaRubrica(r map[string]Contatto)` che stampa a video le istanze del tipo `Contatto` presenti all'interno della rubrica `r`;
-* una funzione `AggiornaContatto(rubrica map[string]Contatto, cognome, nome string, via string, numero uint, cap, città string, telefono string) map[string]Contatto` che, secondo le modalità previste al punto `4`, aggiorna in base ai valori dei parametri `via`, `numero`, `CAP`, `città`, `telefono` l'istanza del tipo `Contatto` presente nella rubrica `r` i cui campi `Cognome` e `Nome` hanno lo stesso valore di quello dei parametri `cognome` e `nome`.
+* una funzione `AggiornaContatto(rubrica map[string]Contatto, nome, cognome string, via string, numero uint, cap, città string, telefono string) map[string]Contatto` che, secondo le modalità previste al punto `4`, aggiorna in base ai valori dei parametri `via`, `numero`, `CAP`, `città`, `telefono` l'istanza del tipo `Contatto` presente nella rubrica `r` i cui campi `Cognome` e `Nome` hanno lo stesso valore di quello dei parametri `cognome` e `nome`.
 
 ##### Esempio d'esecuzione:
 ```text
@@ -77,7 +77,7 @@ I;Mario;Rossi;Via Celoria;18;20122;Milano;02503111
 S
 I;Elena;Bianchi;Via Celoria;18;20122;Milano;02503111
 S
-E;Mario;Rossi;
+E;Mario;Rossi
 S
 A;Elena;Bianchi;Via Festa del perdono;7;20122;Milano;02503111
 S

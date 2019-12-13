@@ -7,11 +7,11 @@ Si consideri una rubrica in cui:
 
 La rubrica può essere gestita tramite le seguenti operazioni: 
 
-1. I;*cognome*;*nome*;*via*;*numero_civico*;*CAP*;*città*;*numero_di_telefono*
+1. I;*nome*;*cognome*;*via*;*numero_civico*;*CAP*;*città*;*numero_di_telefono*
 
    Un nuovo contatto specificato dai parametri: 
 
-   *cognome* *nome* *via* *numero_civico* *CAP* *città* *numero_di_telefono*
+   *nome* *cognome* *via* *numero_civico* *CAP* *città* *numero_di_telefono*
 
    deve essere **inserito** nella rubrica.
 
@@ -19,11 +19,11 @@ La rubrica può essere gestita tramite le seguenti operazioni:
  
    *via* *numero_civico* *CAP* *città* *numero_di_telefono*
 
-2. E;*cognome*;*nome*
+2. E;*nome*;*cognome*
 
    Il contatto identificato dai parametri: 
 
-   *cognome* *nome*
+   *nome* *cognome*
 
    deve essere **eliminato** dalla rubrica.
 
@@ -33,11 +33,11 @@ La rubrica può essere gestita tramite le seguenti operazioni:
 
    I contatti presenti nella rubrica devono essere **stampati** a video.
 
-4. A;*cognome*;*nome*;*via*;*numero_civico*;*CAP*;*città*;*numero_di_telefono*
+4. A;*nome*;*cognome*;*via*;*numero_civico*;*CAP*;*città*;*numero_di_telefono*
 
    I dati relativi al contatto identificato dai parametri: 
 
-   *cognome* *nome*
+   *nome* *cognome*
 
    devono essere **aggiornati** come specificato dai parametri:
 
@@ -45,7 +45,7 @@ La rubrica può essere gestita tramite le seguenti operazioni:
 
    Se i parametri *cognome* e *nome* non identificano un contatto già esistente all'interno della rubrica, un nuovo contatto specificato dai parametri: 
  
-   *cognome* *nome* *via* *numero_civico* *CAP* *città* *numero_di_telefono*
+   *nome* *cognome* *via* *numero_civico* *CAP* *città* *numero_di_telefono*
 
    deve essere **inserito** nella rubrica. 
 
