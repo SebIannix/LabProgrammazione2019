@@ -55,10 +55,10 @@ Scrivere un programma che:
 
 Ogni riga di testo è una stringa in uno dei seguenti possibili formati:
 
-1. I;*cognome*;*nome*;*via*;*numero_civico*;*CAP*;*città*;*numero_di_telefono*
-2. E;*cognome*;*nome*
+1. I;*nome*;*cognome*;*via*;*numero_civico*;*CAP*;*città*;*numero_di_telefono*
+2. E;*nome*;*cognome*
 3. S
-4. A;*cognome*;*nome*;*via*;*numero_civico*;*CAP*;*città*;*numero_di_telefono*
+4. A;*nome*;*cognome*;*via*;*numero_civico*;*CAP*;*città*;*numero_di_telefono*
 
 Il programma deve gestire una rubrica eseguendo in sequenza le operazioni corrispondenti alle righe di testo letto.
 
@@ -67,9 +67,9 @@ Oltre alla funzione `main()`, devono essere definite ed utilizzate almeno le seg
 * una funzione `LeggiTesto() []string` che legge da **standard input** un testo su più righe e terminato da una riga vuota (`""`), restituendo un valore `[]string` in cui sono memorizzate le stringhe corrispondenti alle righe del testo letto;
 * una funzione `Sottostringhe(s string) []string` che riceve in input un valore `string` nel parametro `s` e restituisce un valore `[]string` in cui sono memorizzate tutte le sottostringhe presenti in `s` separate da un carattere `;` (si faccia riferimento alla documentazione della funzione `strings.Split` del package `strings`);
 * una funzione `NuovaRubrica() (r []Contatto)` che restituisce un valore `[]Contatto` nella varibile `r` che rappresenta una rubrica vuota; 
-* una funzione `InserisciContatto(r []Contatto, cognome, nome string, via string, numero uint, cap, città string, telefono string) []Contatto` che, in base alle modalità previste al punto `1`, inserisce nella rubrica `r` un'istanza del tipo `Contatto` inizializzata in base ai valori dei parametri `cognome`, `nome`, `via`, `numero`, `CAP`, `città`, `telefono`;
-* una funzione `EliminaContatto(r []Contatto, cognome, nome string) []Contatto` che, in base alle modalità previste al punto `2`, elimina dalla rubrica `r` l'istanza del tipo `Contatto` i cui campi `Cognome` e `Nome` hanno lo stesso valore di quello dei parametri `cognome` e `nome`;
-* una funzione `AggiornaContatto(rubrica []Contatto, cognome, nome string, via string, numero uint, cap, città string, telefono string) []Contatto` che, secondo le modalità previste al punto `4`, aggiorna in base ai valori dei parametri `via`, `numero`, `CAP`, `città`, `telefono` l'istanza del tipo `Contatto` presente nella rubrica `r` i cui campi `Cognome` e `Nome` hanno lo stesso valore di quello dei parametri `cognome` e `nome`.
+* una funzione `InserisciContatto(r []Contatto, nome, cognome string, via string, numero uint, cap, città string, telefono string) []Contatto` che, in base alle modalità previste al punto `1`, inserisce nella rubrica `r` un'istanza del tipo `Contatto` inizializzata in base ai valori dei parametri `cognome`, `nome`, `via`, `numero`, `CAP`, `città`, `telefono`;
+* una funzione `EliminaContatto(r []Contatto, nome, cognome string) []Contatto` che, in base alle modalità previste al punto `2`, elimina dalla rubrica `r` l'istanza del tipo `Contatto` i cui campi `Cognome` e `Nome` hanno lo stesso valore di quello dei parametri `cognome` e `nome`;
+* una funzione `AggiornaContatto(rubrica []Contatto, nome, cognome string, via string, numero uint, cap, città string, telefono string) []Contatto` che, secondo le modalità previste al punto `4`, aggiorna in base ai valori dei parametri `via`, `numero`, `CAP`, `città`, `telefono` l'istanza del tipo `Contatto` presente nella rubrica `r` i cui campi `Cognome` e `Nome` hanno lo stesso valore di quello dei parametri `cognome` e `nome`.
 
 ##### Esempio d'esecuzione:
 ```text

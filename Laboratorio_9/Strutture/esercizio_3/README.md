@@ -27,10 +27,10 @@ type Contatto struct {
 Implementare le funzioni:
 
 * `NuovaRubrica() (r []Contatto)` che restituisce un valore `[]Contatto` nella varibile `r` che rappresenta una rubrica vuota (una rubrica in cui, inizialmente, non è presente alcun contatto); 
-* `InserisciContatto(r []Contatto, cognome, nome string, via string, numero uint, cap, città string, telefono string) []Contatto` che inserisce nella rubrica `r` un'istanza del tipo `Contatto` inizializzata in base ai valori dei parametri `cognome`, `nome`, `via`, `numero`, `CAP`, `città`, `telefono`;
-* `EliminaContatto(r []Contatto, cognome, nome string) []Contatto` che elimina dalla rubrica `r` l'istanza del tipo `Contatto` i cui campi `Cognome` e `Nome` hanno lo stesso valore di quello dei parametri `cognome` e `nome`;
+* `InserisciContatto(r []Contatto, nome, cognome string, via string, numero uint, cap, città string, telefono string) []Contatto` che inserisce nella rubrica `r` un'istanza del tipo `Contatto` inizializzata in base ai valori dei parametri `cognome`, `nome`, `via`, `numero`, `cap`, `città`, `telefono`;
+* `EliminaContatto(r []Contatto, nome, cognome string) []Contatto` che elimina dalla rubrica `r` l'istanza del tipo `Contatto` i cui campi `Cognome` e `Nome` hanno lo stesso valore di quello dei parametri `cognome` e `nome`;
 * `StampaRubrica(r []Contatto)` che stampa a video le istanze del tipo `Contatto` presenti all'interno della rubrica `r`;
-* `AggiornaContatto(rubrica []Contatto, cognome, nome string, via string, numero uint, cap, città string, telefono string) []Contatto` che aggiorna in base ai valori dei parametri `via`, `numero`, `CAP`, `città`, `telefono` l'istanza del tipo `Contatto` presente nella rubrica `r` i cui campi `Cognome` e `Nome` hanno lo stesso valore di quello dei parametri `cognome` e `nome`;
+* `AggiornaContatto(rubrica []Contatto, nome, cognome string, via string, numero uint, cap, città string, telefono string) []Contatto` che aggiorna in base ai valori dei parametri `via`, `numero`, `CAP`, `città`, `telefono` l'istanza del tipo `Contatto` presente nella rubrica `r` i cui campi `Cognome` e `Nome` hanno lo stesso valore di quello dei parametri `cognome` e `nome`;
 
 affinché la funzione `main()` di seguito riportata possa essere eseguita generando l'output atteso.
 
@@ -75,6 +75,3 @@ Lista dei 2 contatti
 [1] - Anna Rossi, Tel. , Via S. Sofia 25, 20122, Milano
 [2] - Carlo Rossi, Tel. 02503111, Via Festa del Perdono 11, 20122, Milano
 ```
-
-
-
