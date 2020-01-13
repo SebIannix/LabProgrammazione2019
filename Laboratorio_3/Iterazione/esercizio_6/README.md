@@ -13,7 +13,7 @@ Dopo aver letto gli `n` numeri interi, il programma deve stampare:
 ##### Esempio d'esecuzione:
 
 ```text
-$ go run nnumeri.go
+$ go run operazioni.go
 9
 Inserisci 9 numeri:
 1 -2 3 -4 5 -6 7 -8 9
